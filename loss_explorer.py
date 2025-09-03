@@ -3,7 +3,6 @@
 # Saves: outputs/loss_landscape.gif
 #
 # Usage:
-#   pip install torch scikit-learn matplotlib imageio
 #   python landscapes/loss_landscape_gif.py --epochs 500 --grid-res 41 --fps 2.0 --auto-span
 
 import os, copy, math, argparse
@@ -158,7 +157,7 @@ def main():
         cs = ax.contourf(
             Agrid, Bgrid, Z,
             levels=30,
-            cmap="magma_r",          
+            cmap="magma",          
             norm=norm
             )
         fig.colorbar(cs, ax=ax, label="Loss")
@@ -183,3 +182,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
