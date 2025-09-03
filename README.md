@@ -1,7 +1,7 @@
 # deeplearning-showcase
 Gallery of deep learning visuals with content accessible to those who are new to deep learning and those who wish to find ways to visualize concepts. This repository explores interpretation and visualization of deep learning models.
 
-# Train Boundary Project
+# 1. Train Boundary Project
 ## Files
 -train_boundary.py
 -requirements_train_boundary.txt
@@ -12,12 +12,17 @@ Gallery of deep learning visuals with content accessible to those who are new to
 - You get to **watch the model carve up the plane** as it learns over epochs.
 - Points are plotted over the plan so you can see where classifications fail and succeed over epochs.
 
-# Attention Heatmap
+# 2. Attention Heatmap
 ## Files
--attention_heatmap.py
--attention_heatmap.png
+- attention_heatmap.py
+- attention_heatmap.png
 ## Deep Visual: A practical way to read an attention heatmap
 -Transformer models used in NLP and LLM use attention heads to learn the next "token" or word/phrase in the generated sentence.
 -The heatmap shows for each token(row), where it focuses(columns). Bright spots mark strong attention. Bands near the diagonal mean local context, and vertical bars mark hub tokens that many others attend to. Blocks suggest phrase-level grouping.
 -Each head has its own map. Don't over interpret a single head. If you average heads, you get a smoother, less diagnostic map which is great for big picture visuals.
 -Check the stats to confirm it is diffuse attention (entropy $\approx$ 2.69 - 2.75) means very spread out.
+
+# 3. Loss Landscape
+## Files
+- loss_explorer.py
+- loss_landscape.gif
