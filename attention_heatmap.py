@@ -5,7 +5,6 @@
 #   - outputs/attention_heads.png    (all heads grid)
 #
 # Usage:
-#   pip install torch matplotlib
 #   python attention_heatmap.py --seq-len 16 --heads 4 --d-model 32 --causal
 
 import argparse, os, math
@@ -144,3 +143,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
