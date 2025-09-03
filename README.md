@@ -26,3 +26,8 @@ Gallery of deep learning visuals with content accessible to those who are new to
 ## Files
 - loss_explorer.py
 - loss_landscape.gif
+## Deep Visual: Visualize the "ball rolling down the hill" as discussed in **Lambers, James V., Amber Sumner Mooney, Vivian A. Montiforte, and James Quinlan. Explorations in Numerical Analysis and Machine Learning with Julia. World Scientific, 2025. Chapter 16. https://doi.org/10.1142/14443**
+- Explores the loss landscape as we freeze a 2D slice of the weight space around the trained model.
+- Picks two random directions through that point and uses Gram-Schmidt to make them independent and at right angles (orthonormal set), so each axis shows a different, non-overlapping direction.
+- Paints the loss over the plane as a countour map (darker = lower loss/valleys, lighter = higher loss/ridges).
+- With the current training parameters we actually see the ball get stuck in the loss landscape! The goal is to minimize that loss in training and move out of the saddle point or local minimum. 
