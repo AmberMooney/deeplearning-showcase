@@ -5,7 +5,7 @@
 #   - outputs/attention_heads.png    (all heads grid)
 #
 # Usage:
-#   python attention_heatmap.py --seq-len 16 --heads 4 --d-model 32 --causal
+#   python attention_heatmap.py 
 
 import argparse, os, math
 import numpy as np
@@ -143,4 +143,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
